@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+ <h1 class="mt-20 text-4xl font-bold text-center">Take Money from <sopan class="text-cyan-400">baper phoket </sopan>!!</h1>
+     
+  <section> 
+    
+    <div class="w-9/12 grid grid-cols-3 gap-4 mt-10 mx-auto">
+     
+        <div class=" bg-green-600 rounded px-4 py-6">
+           <h1 class="mb-2 text-white text-2xl font-bold">Deposit</h1>
+           <h2 class="text-white text-6xl font-bold">$<span id="previous-deposit-amount">00</span></h2>
+        </div>
+        <div class=" bg-pink-600 rounded px-4 py-6">
+           <h1 class="mb-2 text-white text-2xl font-bold">Withdraw</h1>
+           <h2 class="text-white text-6xl font-bold">$<span id="previous-withdraw-amount">00</span></h2>
+        </div>
+        <div class="bg-teal-600 rounded px-4 py-6">
+           <h1 class="mb-2 text-white text-2xl font-bold">Balance</h1>
+           <h2 class="text-white text-6xl font-bold">$<span id="total-amount">00</span></h2>
+        </div>
+    </div>
+
+  </section>
+
+  <section> 
+    
+    <div class="w-9/12 grid grid-cols-2 gap-4 mt-10 mx-auto">
+     
+        <div class=" bg-yellow-400 rounded px-4 py-6">
+           <h1 class="mb-2 text-white text-2xl font-bold">Deposit Amount</h1>
+           <input type="text" id="deposit-input" class="w-10/12 mb-2 block p-1 rounded-sm" placeholder=" $ Enter deposit amount." >
+           <button id="deposit-btn" class=" drop-shadow-md font-medium mt-2 rounded-md bg-green-600 p-2 text-white">Deposit</button>
+        </div>
+        <div class=" bg-blue-500 rounded px-4 py-6">
+            <h1 class="mb-2 text-white text-2xl font-bold">Withdraw Amount</h1>
+            <input type="text" id="Withdraw-input" class="w-10/12 mb-2 block p-1 rounded-sm" placeholder=" $ Enter deposit amount." >
+            <button id="Withdraw-btn" class=" drop-shadow-md font-medium mt-2 rounded-md bg-pink-600 p-2 text-white">Withdraw</button>
+         </div>
+
+  </section>
+  <script src="./utilities.js"></script>
+  <script src="./bank.js"></script>
+</body>
+</html>
